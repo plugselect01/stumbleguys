@@ -36,7 +36,7 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
 ░╚═══██╗██╔══██║██╔══╝░░██╔══╝░░
 ██████╔╝██║░░██║██║░░░░░███████╗
 ╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚══════╝
-By : ${('Vicenzo#3819')}
+By : ${chalkBold('Vicenzo#3819')}
 `));
 
   const auth = rs.question(chalkRainbow('Enter Authentication Code!: '));
