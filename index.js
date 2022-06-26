@@ -59,10 +59,10 @@ By : ${chalk.bold('Vicenzo#3819')}
 
       console.log(chalkWhite(`\r
 -  [${moment().format('HH:mm:ss')}]  -
->  ${(`Negara By Lana : ${country}`)}
->  ${(`Nama By Lana : ${username}`)}  
->  ${(`Piala By Lana : ${trophy}`)}  
->  ${(`Mahkota By Lana : ${crown}`)}
+>  ${(`Negara By Vicenzo : ${country}`)}
+>  ${(`Nama By Vicenzo : ${username}`)}  
+>  ${(`Piala By Vicenzo : ${trophy}`)}  
+>  ${(`Mahkota By Vicenzo : ${crown}`)}
 >  ${(`Status : Success !`)}`));
       await sleep(3000);
 
