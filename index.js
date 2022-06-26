@@ -44,6 +44,7 @@ By : ${chalkBold('Vicenzo#3819')}
 
   while (true) {
 
+
     const result = await GoStumble(auth);
     if (!result) {
 
@@ -57,13 +58,7 @@ By : ${chalkBold('Vicenzo#3819')}
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
 
-      console.log(chalkWhite(`\r
--  [${moment().format('HH:mm:ss')}]  -
->  ${(`Negara By Vicenzo : ${country}`)}
->  ${(`Nama By Vicenzo : ${username}`)}  
->  ${(`Piala By Vicenzo : ${trophy}`)}  
->  ${(`Mahkota By Vicenzo : ${crown}`)}
->  ${(`Status : Success !`)}`));
+console.log(chalk.bgBlack(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.white(`User : ${username}`)} | ${chalk.yellow(`Trophy : ${trophy}`)} | ${chalk.red(`Crown : ${crown}`)}`));
       await sleep(3000);
 
     } else if (result == 'BANNED') {
