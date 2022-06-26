@@ -48,8 +48,6 @@ By : ${chalkBold('Vicenzo#3819')}
     const result = await GoStumble(auth);
     if (!result) {
 
-      console.log(chalkGreen(`\r[ ${moment().format('HH:mm:ss')} ] Auth Eror !`));
-
     } else if (result.includes('User')) {
 
       const data = JSON.parse(result);
