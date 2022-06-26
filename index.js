@@ -28,7 +28,7 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
 
 (async () => {
 
-  console.log(chalkRainbow(`
+  console.log(`
 ───────────▄▄▄▄▄▄▄▄▄───────────
 ░██████╗░█████╗░███████╗███████╗
 ██╔════╝██╔══██╗██╔════╝██╔════╝
