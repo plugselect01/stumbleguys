@@ -62,7 +62,7 @@ var _0x26f5b4=_0xa2f4;function _0xa2f4(_0x1dbece,_0x504334){var _0x191eec=_0x191
 
 
     } else if (result == 'BANNED') {
-      console.log(chalk.bgRed(`Mampus Banned Makanya jangan brutal`));
+      console.log(consola.error(`Mampus Banned Makanya jangan brutal`));
       break;
     }
   }
