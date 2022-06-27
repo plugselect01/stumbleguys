@@ -56,8 +56,14 @@ By : ${chalkBold('Vicenzo#3819')}
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
 
-console.log(chalk.bgBlack(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.white(`User : ${username}`)} | ${chalk.yellow(`Trophy : ${trophy}`)} | ${chalk.red(`Crown : ${crown}`)}`));
-      await sleep(3000);
+      console.log(chalkWhite(`\r
+-  [${moment().format('HH:mm:ss')}]  -
+>  ${(`Negara By Vicenzo : ${country}`)}
+>  ${(`Nama By Vicenzo : ${username}`)}  
+>  ${(`Piala By Vicenzo : ${trophy}`)}  
+>  ${(`Mahkota By Vicenzo : ${crown}`)}
+>  ${(`Status : Success !`)}`));
+      await sleep(2600);
 
     } else if (result == 'BANNED') {
       console.log(chalk.bgRed(`Mampus Banned Makanya jangan brutal`));
