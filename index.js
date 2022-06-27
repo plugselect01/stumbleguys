@@ -55,7 +55,7 @@ By : ${chalk.bold('xDast#8745')}
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
 
-console.log(chalk.bgWhite(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.blue(`User : ${username}`)} | ${chalk.yellow(`Trophy : ${trophy}`)} | ${chalk.red(`Crown : ${crown}`)}`));
+console.log(chalk.bgWhite(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.blue(`User : ${username}`)} | ${chalk.red(`Crown : ${crown}`)} | ${chalk.yellow(`Trophy : ${trophy}`)}`));
       await sleep(2600);
 
     } else if (result == 'BANNED') {
