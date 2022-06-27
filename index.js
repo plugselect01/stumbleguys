@@ -2,7 +2,6 @@ const fetch = require('node-fetch');
 const moment = require('moment');
 const chalk = require('chalk');
 const rs = require('readline-sync');
-const chalkRainbow = require('chalk-rainbow')
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -36,10 +35,10 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
 ░╚═══██╗██╔══██║██╔══╝░░██╔══╝░░
 ██████╔╝██║░░██║██║░░░░░███████╗
 ╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚══════╝
-By : ${chalkBold('Vicenzo#3819')}
+By : ${chalk.bold('xDast#8745')}
 `);
 
-  const auth = rs.question(chalkRainbow('Enter Authentication Code!: '));
+  const auth = rs.question('Enter Authentication Code! : ');
   console.log('');
 
   while (true) {
@@ -56,18 +55,12 @@ By : ${chalkBold('Vicenzo#3819')}
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
 
-      console.log(chalkWhite(`\r
--  [${moment().format('HH:mm:ss')}]  -
->  ${(`Negara By Vicenzo : ${country}`)}
->  ${(`Nama By Vicenzo : ${username}`)}  
->  ${(`Piala By Vicenzo : ${trophy}`)}  
->  ${(`Mahkota By Vicenzo : ${crown}`)}
->  ${(`Status : Success !`)}`));
+console.log(chalk.bgWhite(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.blue(`User : ${username}`)} | ${chalk.yellow(`Trophy : ${trophy}`)} | ${chalk.red(`Crown : ${crown}`)}`));
       await sleep(2600);
 
     } else if (result == 'BANNED') {
-      console.log(chalk.bgRed(`Mampus Banned Makanya jangan brutal`));
-      break;
+      console.log(chalk.bgRed(`Your Account has been Banned`));
+     break;
     }
   }
 
